@@ -9,10 +9,13 @@ class Artist
     save
   end
   
+<<<<<<< HEAD
   def add_song(song)
    self.songs << song
   end
   
+=======
+>>>>>>> 132b4caecfa57673226db3b2fa0349b2410f5969
   def save
     @@all << self
   end
@@ -21,6 +24,13 @@ class Artist
     @@all
   end
   
+<<<<<<< HEAD
+=======
+  def add_song(song)
+   self.songs << song
+  end
+  
+>>>>>>> 132b4caecfa57673226db3b2fa0349b2410f5969
   def self.find_or_create_by_name(name)
     !self.find(name) ? self.create(name) : self.find(name)
   end
@@ -33,6 +43,10 @@ class Artist
   
   def self.create(name)
     artist = self.new(name)
+<<<<<<< HEAD
+=======
+    artist.save
+>>>>>>> 132b4caecfa57673226db3b2fa0349b2410f5969
     artist
   end
   
